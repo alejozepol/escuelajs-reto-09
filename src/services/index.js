@@ -30,7 +30,7 @@ class ProductService {
     return updateProductId;
   }
 
-  async deleteproduct({ productId }) {
+  async deleteProduct({ productId }) {
     const deleteProductId = await this.mongoDB.delete(this.colection, productId);
     return deleteProductId;
   }

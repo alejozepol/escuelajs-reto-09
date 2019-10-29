@@ -5,14 +5,12 @@ const USER = encodeURIComponent(config.dbUser);
 const PASSWORD = encodeURIComponent(config.dbPassword);
 const DB_NAME = config.dbName;
 
-/* const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${DB_NAME}?retryWrites=true&w=majority`; */
-const MONGO_URI = `mongodb+srv://PlatziStore:Si5q66Nbee9KBGC@reto09-2fb4y.mongodb.net/test?retryWrites=true&w=majority`;
+const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${DB_NAME}?retryWrites=true&w=majority`;
 
 class MongoConnect {
   constructor() {
     this.client = new MongoClient(MONGO_URI, { useNewUrlParser: true });
     this.dbName = DB_NAME;
-    console.log(MONGO_URI)
 
   }
 
