@@ -1,5 +1,5 @@
 # escuelajs-reto-09
-Reto 9 Octubre 26: Curso de Backend con Node
+Reto 9 Octubre 26: Curso de Backend con Node la API puede consultarla en la https://platzistore-api.now.sh para consultar el listado de los productos https://platzistore-api.now.sh/api/products 
 
 ## Platzi Store Backend
 
